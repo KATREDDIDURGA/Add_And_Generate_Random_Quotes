@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------<title> Website Layout | CodingLab</title>------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Be Inquisitive</a>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Quote Generator</div>
+    <div class="sub_title">Maintain your personal quote repository.</div>
+    <div class="btns">
+      <a href="#see"><button  title="click here to generate a quote ">Gen Quote</button></a>
+      <a href="#add"><button  title="click here to add a new quote ">Add Quote</button></a>
+    </div>
+  </div>
+  
+   
+  <div id="see">
+  <div class="content">
+      <div class="card">
+        <h2>Random quote</h2><br/>
+        <p>Do you want a random quote ?</p><br/>
+        <button onclick="displayQuote()" class="btn">Generate</button>
+      </div>
+      <div id="quote"></div>
+  </div>
+</div>
+<div id="add">
+<div class="content">
+    <div class="card">
+       <h2>Store Your own Quotes</h2>
+       <p>Enter the quote in the input box and click add?</p><br/>
+               <input type="text" id="inputtext"/>
+               <button type="button" id="add" onclick="addRecord();" class="btn">Insert this quote</button>
+
+   <div id='values'></div>
+    </div>
+<div id="quote1"></div>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
